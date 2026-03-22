@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>my form</title>
+<style>
+	.container{
+		width: 40%;
+		border:1px solid black;
+		margin:auto;
+		padding: 20px;
+		font-size: 24px;
+		background-color: gray;
+	}
+	#myform table tr td input{
+		font-size: 24px;
+		background-color: black;
+		color:antiquewhite
+	}
+	#myform table tr td select{
+		background-color: black;
+		color: antiquewhite;
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<h1>My form</h1>
+		<form action="register" method="post" id="myform">
+			<table>
+				<tr>
+					<td>Enter your name :</td>
+					<td><input type="text" name="user_name" placeholder="Enter here"></td>
+				</tr>
+				<tr>
+					<td>Enter your password :</td>
+					<td><input type="password" name="user_password" placeholder="Enter here"></td>
+				</tr>
+				<tr>
+					<td>Enter your email :</td>
+					<td><input type="email" name="user_email" placeholder="Enter here"></td>
+				</tr>
+				<tr>
+					<td>Select Gender :</td>
+					<td>male <input type="radio" name="user_gender" value="male"/> &nbsp; female <input type="radio" name="user_gender" value="female"/></td>
+				</tr>
+				<tr>
+					<td>Select course :</td>
+					<td>
+					<select name="user_course">
+						<option value="cse">Cse</option>
+						<option value="ese">Ese</option>
+						<option value="eee">Eee</option>
+						<option value="mec">Mec</option> 
+					</select>
+					</td>
+				</tr>
+				<tr>
+				<td style="text-align:center;">
+					<input type="checkbox" value="checked" name="condition">
+				</td>
+				<td>
+					Agree terms and conditions
+				</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align:center;">
+						<button type="submit" style="background-color:grey;">submit</button>
+						<button type="reset" style="background-color:gray;">reset</button>
+					</td>
+				</tr>				
+			</table>
+		</form>
+	</div>
+</body>
+</html>
